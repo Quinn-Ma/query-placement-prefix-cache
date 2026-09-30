@@ -19,7 +19,7 @@
 </head>
 <body>
 <header class="hero">
-  <p class="venue">Preprint, 2026</p>
+  <p class="venue">NeurIPS 2026 Workshop on Long Context Foundation Models (LCFM)</p>
   <h1>Describe the Task First, Ask Last? Query Placement and Prefix-Cache Reuse in Small Long-Context Models</h1>
   <p class="authors"><span class="author">Qinzhen Ma<sup>1</sup></span><span class="author">Jialin Wu<sup>2</sup></span><span class="author">Shichen Tang<sup>1</sup></span></p>
   <p class="affs"><span><sup>1</sup>Rice University</span><span><sup>2</sup>UC San Diego</span></p>
@@ -30,10 +30,10 @@
   <section><h2>Abstract</h2><p class="abstract">Exact prefix caching reuses the key-value cache of a shared document only when each question comes after it, yet practitioner guides disagree on whether questions should precede long documents. We measure what this cache-friendly, query-last layout costs. On three open instruction-tuned models with 3-4B parameters, we compare six prompt layouts on multi-key needle retrieval with distractors at 3.5k-16k tokens and five of them on three LongBench tasks, and we time prefill when eight questions share one document. Query-first prompts are the clear failure: they cost the two models that are not at ceiling 18.3 and 25.0 points of needle accuracy, always by returning a distractor&#x27;s value, and lose 10.7 LongBench points relative to query-last. Repeating the question on both sides of the document gains at most 4.2 needle points for any model, which is not significant after correction, scores 3.2 points lower on LongBench, and needs 6.9x the prefill time for eight questions about a 16k-token document. A query-agnostic task description placed before the document, which keeps the document cacheable, barely changes needle accuracy and raises LongBench scores by 4.3 points over query-last, while a length-matched irrelevant preamble does not. In our setting, describing the task before the document and asking the question after it gives the best LongBench average of the five layouts we test, at nearly the prefill cost of query-last.</p></section>
   <section><h2>Results</h2><figure><img src="assets/fig1.png" alt="Figure 1" loading="lazy"><figcaption><b>Figure 1.</b> Multi-key NIAH accuracy by document length and layout. Query-first is the only layout that degrades sharply (up to 42.5 points below query-both on the standard task), while query-last stays within 7.5 points of query-both in every standard-task cell.</figcaption></figure></section>
   <section><h2>Paper</h2><div class="thumbs"><a href="assets/paper.pdf" target="_blank" rel="noopener"><img src="assets/page1.png" alt="Page 1" loading="lazy"></a><a href="assets/paper.pdf" target="_blank" rel="noopener"><img src="assets/page2.png" alt="Page 2" loading="lazy"></a><a href="assets/paper.pdf" target="_blank" rel="noopener"><img src="assets/page3.png" alt="Page 3" loading="lazy"></a><a href="assets/paper.pdf" target="_blank" rel="noopener"><img src="assets/page4.png" alt="Page 4" loading="lazy"></a></div><p class="muted"><a href="assets/paper.pdf" target="_blank" rel="noopener">Download PDF</a> (13 pages)</p></section>
-  <section id="bibtex"><h2>BibTeX</h2><div class="bib"><button class="copy" type="button">Copy</button><pre><code>@misc{ma2026describe,
+  <section id="bibtex"><h2>BibTeX</h2><div class="bib"><button class="copy" type="button">Copy</button><pre><code>@inproceedings{ma2026describe,
   title  = {Describe the Task First, Ask Last? Query Placement and Prefix-Cache Reuse in Small Long-Context Models},
   author = {Qinzhen Ma and Jialin Wu and Shichen Tang},
-  note   = {Preprint},
+  booktitle = {NeurIPS 2026 Workshop on Long Context Foundation Models},
   year   = {2026}
 }</code></pre></div></section>
 </main>

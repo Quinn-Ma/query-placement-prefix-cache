@@ -2,7 +2,7 @@
 
 Qinzhen Ma, Jialin Wu, Shichen Tang
 
-Preprint, 2026
+NeurIPS 2026 Workshop on Long Context Foundation Models (LCFM)
 
 **Project page:** https://query-placement-prefix-cache.pages.dev · [Paper PDF](assets/paper.pdf)
 
@@ -24,10 +24,10 @@ from this repository: no build command, output directory `/`.
 ## Citation
 
 ```bibtex
-@misc{ma2026describe,
+@inproceedings{ma2026describe,
   title  = {Describe the Task First, Ask Last? Query Placement and Prefix-Cache Reuse in Small Long-Context Models},
   author = {Qinzhen Ma and Jialin Wu and Shichen Tang},
-  note   = {Preprint},
+  booktitle = {NeurIPS 2026 Workshop on Long Context Foundation Models},
   year   = {2026}
 }
 ```
